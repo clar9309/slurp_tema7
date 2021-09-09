@@ -1,0 +1,139 @@
+/* ------------------------------Variabler------------------------------------  */
+
+html {
+  --white: #fff;
+  --black: #000;
+  --lightblue: #bad9e5;
+  --darkblue: #111ef2;
+  --red: #f44000;
+  --pink: #f290a5;
+
+  scroll-behavior: smooth;
+}
+
+/* ------------------------------Header og Nav------------------------------------  */
+
+header {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+nav {
+  display: grid;
+  text-align: end;
+}
+
+/* Burger menu */
+
+/* Menuen er der stadig, men den er usynling */
+/* Ved transform er den ude til venstre, dvs. hvis man fjerne transform og opacity, er de der stadig */
+.hidden {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+#menuknap {
+  display: inline-block;
+  font-size: 3rem;
+}
+
+#menu li a {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  color: black;
+  padding: 10px;
+  font-weight: 100;
+}
+
+/* Styler menuen  */
+/* ved transform og transition, så gør jeg at de flyver ind fra siden, hvor den så tager 
+  udgangspunkt i top og left */
+#menu {
+  list-style-type: none;
+  transition: transform 0.3s;
+  transform-origin: top right;
+}
+
+#menu a {
+  text-decoration: none;
+}
+/* navigation ved hover i mobile  */
+
+nav ul li::after {
+  content: "";
+  width: 0%;
+  height: 0.2rem;
+  background: black;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+nav ul li:hover::after {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  font-family: bilo, sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  color: black;
+  font-size: 3rem;
+  margin-top: 0;
+}
+
+/* -------------------------------Responsiv / Desk top---------------------------------- */
+
+/* Hvis skærmen er større end 600px  */
+
+@media (min-width: 600px) {
+  body {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+  /* menuknap vises ikke når skærmen er større end 600px */
+  #menuknap {
+    display: none;
+  }
+  /*id'et menu har klassen hidden, når skærmen er større en 600px, det vil sige at den ikke er
+    usynling længere*/
+
+  #menu.hidden {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  /* Menuen ligger sig på linje i stor skærm */
+  #menu li {
+    display: inline-block;
+  }
+
+  .column {
+    flex: 1;
+    padding: 5px;
+  }
+  .row {
+    display: flex;
+  }
+  /* Streg under tekst i navigation ved hover i desktop  */
+
+  nav ul li::after:hover {
+    content: "";
+    width: 0%;
+    height: 0.2rem;
+    background: black;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+
+  nav ul li:hover::after {
+    width: 100%;
+  }
+}

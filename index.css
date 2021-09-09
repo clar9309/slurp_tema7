@@ -1,0 +1,52 @@
+.videoBG {
+    max-width: 100%;
+  }
+
+  button {
+    position: absolute;
+    top: 41vw;
+    left: 29vw;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    font-weight: 300;
+    text-align: center;
+    display: inline-block;
+    font-size: 0.8rem;
+    transition-duration: 0.4s;
+    background-color: transparent;
+    font-family: "Quicksand", sans-serif;
+  }
+
+
+  button::after {
+    content: "";
+    width: 0%;
+    height: 0.1rem;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+
+  button:hover::after {
+    width: 100%;
+  }
+
+  @media (min-width: 600px) {
+    button {
+      position: absolute;
+      top: 41vw;
+      left: 38vw;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      font-weight: 300;
+      text-align: center;
+      display: inline-block;
+      font-size: 1.8rem;
+      transition-duration: 0.4s;
+      background-color: transparent;
+      font-family: "Quicksand", sans-serif;
+    }
+  }
