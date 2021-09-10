@@ -1,0 +1,41 @@
+h3 {
+  font-family: "Bilo", sans-serif;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+
+button {
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  font-weight: 300;
+  text-align: center;
+  display: inline-block;
+  font-size: 1rem;
+  transition-duration: 0.4s;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+button::after {
+  content: "";
+  width: 0%;
+  height: 0.2rem;
+  background: black;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+button:hover::after {
+  width: 100%;
+}
