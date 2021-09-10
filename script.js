@@ -22,3 +22,15 @@ function toggleMenu() {
     document.querySelector("#menuknap").textContent = "✕";
   }
 }
+
+// Henter data fra restdp
+
+const header = document.querySelector("h2");
+const url = "https://drinkkort-5373.restdb.io/rest/drinks";
+const options = {
+  headers: {
+    "x-apikey": "e548a52b0eb2f33f2ebfa104d90a38dff44d4	",
+  },
+};
+
+

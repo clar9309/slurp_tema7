@@ -1,3 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 /* ------------------------------Variabler------------------------------------  */
 
 html {
@@ -23,6 +34,17 @@ header {
 nav {
   display: grid;
   text-align: end;
+}
+
+/* ------------------------------Typografi------------------------------------  */
+
+p {
+  font-family: "Bilo", sans-serif;
+}
+
+h2 {
+  font-family: "Bilo", sans-serif;
+  font-size: 2rem;
 }
 
 /* Burger menu */
