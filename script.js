@@ -24,7 +24,7 @@ function toggleMenu() {
 }
 
 // Henter data fra restdp
-
+let drinks;
 const header = document.querySelector("h2");
 const url = "https://drinkkort-5373.restdb.io/rest/drinks";
 const options = {
@@ -32,3 +32,12 @@ const options = {
     "x-apikey": "e548a52b0eb2f33f2ebfa104d90a38dff44d4	",
   },
 };
+
+async function hentData() {
+  const jsonData = await fetch(url, options);
+  drinks = await jsonData.json();
+  console.log(drinks);
+}
+
+
+hentData(drinks);
