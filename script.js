@@ -37,6 +37,29 @@ async function hentData() {
   const jsonData = await fetch(url, options);
   drinks = await jsonData.json();
   console.log(drinks);
+  visIndhold(drinks);
+
 }
 
 hentData(drinks);
+
+
+function visIndhold() {
+  // variabler for indholdets destination og templaten
+  const destination = document.querySelector("#liste");
+  let template = document.querySelector("template");
+  // rydder indholdet af sektionen så der er plads til det nye indhold efter filtrering)
+  destination.textContent = "";
+
+  drinks.forEach(drink => {
+      // if conditionen tjekker for filter og looper derefter igennem det tilsvarende indhold
+      
+          const klon = template.cloneNode(true).content;
+          klon.querySelector(".navn").textContent = drink.navn;
+          klon.querySelector("img").src = "drinks/" + drink.billednavn + ".png";
+          destination.appendChild(klon);
+      
+
+  });
+}
+
