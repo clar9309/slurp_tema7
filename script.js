@@ -29,7 +29,7 @@ const header = document.querySelector("h2");
 const url = "https://drinkkort-5373.restdb.io/rest/drinks";
 const options = {
   headers: {
-    "x-apikey": "e548a52b0eb2f33f2ebfa104d90a38dff44d4	",
+    "x-apikey": "613b464043cedb6d1f97ef65",
   },
 };
 
@@ -38,6 +38,5 @@ async function hentData() {
   drinks = await jsonData.json();
   console.log(drinks);
 }
-
 
 hentData(drinks);
