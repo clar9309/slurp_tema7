@@ -32,5 +32,3 @@ const options = {
     "x-apikey": "e548a52b0eb2f33f2ebfa104d90a38dff44d4	",
   },
 };
-
-
