@@ -23,7 +23,7 @@ function toggleMenu() {
   }
 }
 
-// Henter data fra restdp
+
 let drinks;
 const header = document.querySelector("h2");
 const url = "https://drinkkort-5373.restdb.io/rest/drinks";
@@ -33,6 +33,7 @@ const options = {
   },
 };
 
+// Henter data fra restdp, skriver data ud som en besked i console, og kalder derefter functionen visindhold med det hentede data 
 async function hentData() {
   const jsonData = await fetch(url, options);
   drinks = await jsonData.json();
@@ -45,18 +46,18 @@ hentData(drinks);
 
 
 function visIndhold() {
+
   // variabler for indholdets destination og templaten
   const destination = document.querySelector("#liste");
   let template = document.querySelector("template");
+
   // rydder indholdet af sektionen så der er plads til det nye indhold efter filtrering)
   destination.textContent = "";
 
   drinks.forEach(drink => {
-      // if conditionen tjekker for filter og looper derefter igennem det tilsvarende indhold
-      
           const klon = template.cloneNode(true).content;
           klon.querySelector(".navn").textContent = drink.navn;
-          klon.querySelector("img").src = "drinks/" + drink.billednavn + ".png";
+          klon.querySelector("img").src = "drinks/" + drink.billednavn + ".svg";
           destination.appendChild(klon);
       
 
