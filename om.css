@@ -1,17 +1,24 @@
-#image_snake {
-  display: block;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  gap: 10px;
+.images_om {
+  height: 50%;
+  width: 50%;
 }
 
-#om_os {
+.images_om_one {
+  height: 50%;
+  width: 50%;
+  padding-right: 5rem;
+}
+
+.first_section {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
-#second_section {
-  padding-right: 5%;
+.second_section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.wrapper {
+  padding: 6%;
 }
