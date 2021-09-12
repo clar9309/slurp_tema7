@@ -29,6 +29,7 @@ header {
   font-family: "Roboto", sans-serif;
   justify-content: space-between;
   overflow: hidden;
+  margin-bottom: 0;
 }
 
 nav {
@@ -113,9 +114,7 @@ a {
 .logo_img {
   max-width: 100%;
   height: 5rem;
- 
 }
-
 
 /* -------------------------------Responsiv / Desk top---------------------------------- */
 
