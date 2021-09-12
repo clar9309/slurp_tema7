@@ -19,12 +19,12 @@ button {
   font-weight: 300;
   text-align: center;
   display: inline-block;
-  font-size: 1rem;
   transition-duration: 0.4s;
   background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-size: clamp(1rem, 5.3vw - 1.3rem, 2rem);
 }
 
 button::after {
@@ -39,4 +39,24 @@ button::after {
 
 button:hover::after {
   width: 100%;
+}
+
+#tekst {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#tekst button {
+  grid-column: 2/4;
+}
+
+@media (min-width: 600px) {
+  #tekst {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  #tekst button {
+    grid-column: 2/4;
+  }
 }
