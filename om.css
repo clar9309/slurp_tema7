@@ -1,24 +1,117 @@
-.images_om {
-  height: 50%;
-  width: 50%;
+#styletile hr {
+  border: 0;
+  border-top: 1px solid;
+  color: black;
 }
 
-.images_om_one {
-  height: 50%;
-  width: 50%;
-  padding-right: 5rem;
+#styletile .details {
+  font-size: 12px;
+  font-family: "nasalization", sans-serif;
+  color: #f7f9fa;
 }
 
-.first_section {
+#styletile .color {
+  height: 70px;
+  width: 70px;
+  border: 5px solid black;
+}
+
+#styletile .colors div {
+  height: 70px;
+  width: 70px;
+  border: 5px solid black;
+}
+
+#styletile .color_1 {
+  background: #ffffff;
+}
+
+#styletile .color_2 {
+  background: #bad9e5;
+}
+
+#styletile .color_3 {
+  background: #111ef2;
+}
+
+#styletile .color_4 {
+  background: #000000;
+}
+
+#styletile .color_5 {
+  background: #f290a5;
+}
+
+#styletile .color_6 {
+  background: #f44000;
+}
+
+#styletile .color_7 {
+  background: #989eff;
+}
+
+#styletile .color_8 {
+  background: #989898;
+}
+
+#styletile .color_9 {
+  background: #f0835c;
+}
+
+#styletile .color_10 {
+  background: #f44000;
+}
+
+#styletile .color_11 {
+  background: #1f1f1f;
+}
+
+#styletile .color_12 {
+  background: #f5dc66;
+}
+
+#styletile .color_13 {
+  background: #7c7c7c;
+}
+
+#styletile .color_14 {
+  background: #00d1a7;
+}
+
+#styletile .colors {
+  display: flex;
+  flex-flow: wrap;
+  gap: 20px;
+}
+
+#styletile {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  max-width: 1000px;
+  margin: auto;
 }
 
-.second_section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+#styletile .headings {
+  grid-row: 1/4;
 }
 
-.wrapper {
-  padding: 6%;
+.font_one {
+  font-family: "Bilo", sans-serif;
+  font-style: italic;
+}
+
+.font_two {
+  font-family: "Bilo", sans-serif;
+  font-style: bold;
+}
+
+.font_three {
+  font-family: "Bilo", sans-serif;
+  font-style: bold;
+}
+
+.font_four {
+  font-family: "Bilo", sans-serif;
+  font-style: light;
 }
