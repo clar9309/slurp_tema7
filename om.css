@@ -115,15 +115,8 @@
   font-style: light;
 }
 
-.tekst_one {
-}
-
-.tekst_two {
-}
-
 .wrapper_om {
   display: grid;
-  grid-template-columns: 1fr 1fr;
 }
 
 /* Citat under h2  */
@@ -138,3 +131,11 @@
   margin-bottom: 2vw;
   max-width: 60ch;
 }
+
+/*@media (min-width: 600px) {
+  .headings .palette {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+}
+*/
