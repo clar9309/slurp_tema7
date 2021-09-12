@@ -23,8 +23,8 @@ function toggleMenu() {
   }
 }
 
-
 let drinks;
+let alle;
 const header = document.querySelector("h2");
 const url = "https://drinkkort-5373.restdb.io/rest/drinks";
 const options = {
@@ -33,20 +33,37 @@ const options = {
   },
 };
 
-// Henter data fra restdp, skriver data ud som en besked i console, og kalder derefter functionen visindhold med det hentede data 
+function start() {
+  const filterKnapper = document.querySelectorAll("ul button");
+  filterKnapper.forEach((knap) =>
+    knap.addEventListener("click", filtrerDrinks)
+  );
+  loadJSON();
+}
+
+//   -----------------------------------------------------------------------
+
+function filtrerDrinks() {
+  filter = this.dataset.kategori;
+  document.querySelector(".valgt").classList.remove("valgt");
+  this.classList.add("valgt");
+
+  visIndhold();
+
+  header.textContent = this.textContent;
+}
+
+// Henter data fra restdp, skriver data ud som en besked i console, og kalder derefter functionen visindhold med det hentede data
 async function hentData() {
   const jsonData = await fetch(url, options);
   drinks = await jsonData.json();
   console.log(drinks);
   visIndhold(drinks);
-
 }
 
 hentData(drinks);
 
-
 function visIndhold() {
-
   // variabler for indholdets destination og templaten
   const destination = document.querySelector("#liste");
   let template = document.querySelector("template");
@@ -54,13 +71,10 @@ function visIndhold() {
   // rydder indholdet af sektionen så der er plads til det nye indhold efter filtrering)
   destination.textContent = "";
 
-  drinks.forEach(drink => {
-          const klon = template.cloneNode(true).content;
-          klon.querySelector(".navn").textContent = drink.navn;
-          klon.querySelector("img").src = "drinks/" + drink.billednavn + ".svg";
-          destination.appendChild(klon);
-      
-
+  drinks.forEach((drink) => {
+    const klon = template.cloneNode(true).content;
+    klon.querySelector(".navn").textContent = drink.navn;
+    klon.querySelector("img").src = "drinks/" + drink.billednavn + ".svg";
+    destination.appendChild(klon);
   });
 }
-
