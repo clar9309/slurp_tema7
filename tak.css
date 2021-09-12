@@ -3,6 +3,7 @@ h3 {
   font-size: clamp(2rem, 16vw - 5rem, 5rem);
   display: flex;
   justify-content: center;
+  color: var(--pink);
 }
 
 a {
@@ -14,6 +15,7 @@ a {
 
 button {
   border: none;
+  font-family: "bilo";
   color: black;
   padding: 15px 32px;
   font-weight: 300;
@@ -38,7 +40,7 @@ button::after {
 }
 
 button:hover::after {
-  width: 100%;
+  width: 50%;
 }
 
 #tekst {
