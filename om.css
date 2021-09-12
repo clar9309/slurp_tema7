@@ -115,3 +115,14 @@
   font-family: "Bilo", sans-serif;
   font-style: light;
 }
+
+.tekst_one {
+}
+
+.tekst_two {
+}
+
+.wrapper_om {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
