@@ -22,3 +22,53 @@ article {
   margin-bottom: 2vw;
   max-width: 60ch;
 }
+
+/* -------------------------------Button filtrering---------------------------------- */
+
+button {
+  border: none;
+  color: black;
+  padding: 32px 45px;
+  text-align: center;
+  display: inline-block;
+  font-size: 1rem;
+  transition-duration: 0.4s;
+  background-color: white;
+  cursor: pointer;
+  font-family: "Bilo";
+  margin-left: -15px;
+}
+
+button::after {
+  content: "";
+  width: 0%;
+  height: 0.2rem;
+  background: black;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+button:hover::after {
+  width: 100%;
+}
+
+.valgt {
+  text-decoration: underline 4px solid black;
+}
+
+@media (min-width: 600px) {
+  button {
+    border: none;
+    color: black;
+    padding: 32px 45px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1rem;
+    transition-duration: 0.4s;
+    background-color: white;
+    cursor: pointer;
+    font-family: "Bilo";
+    margin-left: -15px;
+  }
+}

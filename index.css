@@ -3,7 +3,7 @@
   margin-top: 0;
 }
 
-button {
+/* button {
   position: absolute;
   top: 41vw;
   left: 29vw;
@@ -49,4 +49,4 @@ button:hover::after {
     background-color: transparent;
     font-family: "Quicksand", sans-serif;
   }
-}
+} */
