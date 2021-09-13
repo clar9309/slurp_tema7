@@ -4,6 +4,7 @@ window.addEventListener("load", sidenVises);
 function sidenVises() {
   console.log("sidenVises");
   document.querySelector("#menuknap").addEventListener("click", toggleMenu);
+  start();
 }
 
 //console log skriver en besked til konsollen - kan evt bruges til at teste
@@ -24,7 +25,7 @@ function toggleMenu() {
 }
 
 let drinks;
-let alle;
+let filter ="alle";
 const header = document.querySelector("h2");
 const url = "https://drinkkort-5373.restdb.io/rest/drinks";
 const options = {
@@ -34,17 +35,23 @@ const options = {
 };
 
 function start() {
+  
   const filterKnapper = document.querySelectorAll("ul button");
   filterKnapper.forEach((knap) =>
     knap.addEventListener("click", filtrerDrinks)
   );
-  loadJSON();
+  
+  hentData(drinks);
 }
 
 //   -----------------------------------------------------------------------
 
 function filtrerDrinks() {
-  filter = this.dataset.kategori;
+
+
+  filter = this.dataset.alkoholtyper;
+  console.log(filter);
+  
   document.querySelector(".valgt").classList.remove("valgt");
   this.classList.add("valgt");
 
@@ -61,7 +68,7 @@ async function hentData() {
   visIndhold(drinks);
 }
 
-hentData(drinks);
+
 
 function visIndhold() {
   // variabler for indholdets destination og templaten
@@ -71,10 +78,12 @@ function visIndhold() {
   // rydder indholdet af sektionen så der er plads til det nye indhold efter filtrering)
   destination.textContent = "";
 
-  drinks.forEach((drink) => {
+ 
+  drinks.forEach(drink => {
+    if (filter == drink.alkoholtyper || filter == "alle") {
     const klon = template.cloneNode(true).content;
     klon.querySelector(".navn").textContent = drink.navn;
     klon.querySelector("img").src = "drinks/" + drink.billednavn + ".svg";
     destination.appendChild(klon);
-  });
+}});
 }
