@@ -1,17 +1,20 @@
 article {
-  margin-bottom: 2rem;
-  padding: 1rem;
+  margin-bottom: 0.5rem;
+  padding: 1.5rem;
   align-self: center;
-  justify-self: center;
+  justify-content: center;
 }
+
 
 #liste {
   display: grid;
   grid-gap: 20px;
   grid-auto-flow: dense;
   margin: auto;
-  max-width: 1400px;
+  max-width: 1500px;
 }
+
+
 
 .citat {
   font-family: "bilo", sans-serif;
@@ -22,7 +25,6 @@ article {
   margin-top: 2vw;
   margin-bottom: 2vw;
   max-width: 60ch;
-  font-size: 1.5rem;
 }
 
 /* -------------------------------Button filtrering---------------------------------- */
@@ -30,7 +32,7 @@ article {
 button {
   border: none;
   color: black;
-  padding: 32px 45px;
+  padding: 30px 30px;
   text-align: center;
   display: inline-block;
   font-size: 1rem;
@@ -39,6 +41,7 @@ button {
   cursor: pointer;
   font-family: "Bilo";
   margin-left: -15px;
+  
 }
 
 button::after {
@@ -74,7 +77,22 @@ button:hover::after {
     margin-left: -15px;
   }
 
+  #liste{
+    grid-template-columns: 1fr 1fr;
+  }
+  article:nth-child(4n+1) {
+    justify-self:left;
+  }
+
   article:nth-child(4n-1) {
     grid-column: 2;
-  }
+    justify-self:right;
+    }
+
+  
+    .drinks_img{
+      width: 25vw;
+    }
+
+   
 }
