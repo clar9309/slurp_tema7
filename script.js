@@ -83,8 +83,10 @@ function visIndhold() {
     if (filter == drink.alkoholtyper || filter == "alle") {
     const klon = template.cloneNode(true).content;
 
-    klon.querySelector(".navn").textContent = drink.navn;
+    
     klon.querySelector("img").src = "drinks/" + drink.billednavn + ".svg";
+    klon.querySelector(".navn").textContent = drink.navn;
+    klon.querySelector(".citat").textContent = drink.citat;
 
     klon.querySelector(".drinks").addEventListener("click",() => visDetaljer(drink));
 
