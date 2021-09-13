@@ -1,13 +1,21 @@
 article {
-  border: 1px solid black;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   padding: 1rem;
+  align-self: center;
+  justify-self: center;
+ 
+
 }
 
+  
+  
+  
+  
+  
 #liste {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   grid-gap: 20px;
+  grid-auto-flow: dense;
   margin: auto;
   max-width: 1400px;
 }
@@ -71,4 +79,8 @@ button:hover::after {
     font-family: "Bilo";
     margin-left: -15px;
   }
+
+  article:nth-child(4n-1) {
+    grid-column: 2;
+    }
 }

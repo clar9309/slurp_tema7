@@ -88,7 +88,7 @@ function visIndhold() {
     klon.querySelector(".navn").textContent = drink.navn;
     klon.querySelector(".citat").textContent = drink.citat;
 
-    klon.querySelector(".drinks").addEventListener("click",() => visDetaljer(drink));
+    klon.querySelector("article").addEventListener("click",() => visDetaljer(drink));
 
     destination.appendChild(klon);
     
