@@ -26,6 +26,7 @@ function toggleMenu() {
 
 let drinks;
 let filter ="alle";
+
 const header = document.querySelector("h2");
 const url = "https://drinkkort-5373.restdb.io/rest/drinks";
 const options = {
@@ -47,11 +48,10 @@ function start() {
 //   -----------------------------------------------------------------------
 
 function filtrerDrinks() {
-
-
+  //sætter filters værdi lig med værdien fra data af den knap der førte ind i funktionen
   filter = this.dataset.alkoholtyper;
   console.log(filter);
-  
+//fjerner og tilføjer valgt class til den rigtige knap
   document.querySelector(".valgt").classList.remove("valgt");
   this.classList.add("valgt");
 
@@ -82,8 +82,21 @@ function visIndhold() {
   drinks.forEach(drink => {
     if (filter == drink.alkoholtyper || filter == "alle") {
     const klon = template.cloneNode(true).content;
+
     klon.querySelector(".navn").textContent = drink.navn;
     klon.querySelector("img").src = "drinks/" + drink.billednavn + ".svg";
+
+    klon.querySelector(".drinks").addEventListener("click",() => visDetaljer(drink));
+
     destination.appendChild(klon);
+    
 }});
 }
+//-----fører hen til single view---//
+function visDetaljer (drink) {
+  location.href = `galleri-single.html?id=${drink._id}`;
+}
+
+
+
+

@@ -27,7 +27,47 @@
     </nav>
   </header>
 
+  <article class="drinks">
+    <h3 class="navn"></h3>
+    <img class="billede" src="" alt="billede" />
+    <p class="ingredienser"></p>
+    <p class="beskrivelse"></p>
+    <p class="citat"></p>
+
+  </article>
   <script src="script.js"></script>
+
+  <script>
+    //script kun for single view
+    let drink;
+//finder ID'et for drinken og gemmer i variabel id
+    const urlParams = new URLSearchParams(window.location.search);
+    const id = urlParams.get("id");
+
+
+    console.log("ID", id);
+
+// indhenter data fra restdb med id'et
+    async function hentData() {
+      const JSONData = await fetch(`https://drinkkort-5373.restdb.io/rest/drinks/${id}`, options );
+      drink = await JSONData.json();
+      console.log("Drinken", drink);
+      visDrink(drink);
+    }
+
+    
+    function visDrink() {
+      document.querySelector(".navn").textContent = drink.navn;
+      document.querySelector(".billede").src = "drinks/" + drink.billednavn + ".svg";
+      document.querySelector(".citat").textContent = drink.citat;
+      document.querySelector(".beskrivelse").textContent = drink[`lang beskrivelse`];
+      document.querySelector(".ingredienser").textContent = drink.ingredienser;
+
+    }
+
+
+  </script>
+
 </body>
 
 </html>
