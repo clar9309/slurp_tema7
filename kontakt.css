@@ -43,3 +43,7 @@ input[type="submit"]:hover {
   margin-bottom: 2vw;
   max-width: 60ch;
 }
+
+h2 {
+  color: var(--pink);
+}
