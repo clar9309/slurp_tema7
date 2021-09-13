@@ -107,6 +107,7 @@ nav ul li:hover::after {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 /* -------------------------------Logo---------------------------------- */
@@ -115,6 +116,35 @@ a {
   max-width: 100%;
   height: 5rem;
   margin-bottom: 0;
+}
+
+/* -------------------------------Footer---------------------------------- */
+
+#footer {
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.sociale_medier {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.sociale_medier img {
+  width: 2rem;
+}
+.sociale_medier img:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.telefon {
+  text-align: center;
+}
+
+.mail {
+  text-align: center;
 }
 
 /* -------------------------------Responsiv / Desk top---------------------------------- */
@@ -163,6 +193,68 @@ a {
   }
 
   nav ul li:hover::after {
+    width: 100%;
+  }
+
+  /* Responsiv footer  */
+  #footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .sociale_medier img:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+      0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .telefon {
+    display: block;
+  }
+  .telefon a::after {
+    content: "";
+    width: 0%;
+    height: 0.2rem;
+    background: var(--black);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+
+  .telefon a:hover:after {
+    width: 100%;
+  }
+
+  .mail {
+    display: block;
+  }
+
+  .mail a::after {
+    content: "";
+    width: 0%;
+    height: 0.2rem;
+    background: var(--black);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+
+  .mail a:hover:after {
+    width: 100%;
+  }
+
+  /* Links  */
+
+  #links a::after {
+    content: "";
+    width: 0%;
+    height: 0.2rem;
+    background: var(--black);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+
+  #links a:hover:after {
     width: 100%;
   }
 }
