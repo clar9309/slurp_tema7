@@ -1,28 +1,36 @@
 article {
-  margin-bottom: 0.5rem;
-  padding: 1.5rem;
+  padding: 1rem 2rem;
   align-self: center;
-  justify-content: center;
+  align-content: center;
 }
-
+.drinks_img {
+  margin-top: 2rem;
+  cursor: pointer;
+}
+article div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 #liste {
   display: grid;
-  grid-gap: 20px;
   grid-auto-flow: dense;
   margin: auto;
-  max-width: 1500px;
+  max-width: 1600px;
 }
 
 .citat {
   font-family: "bilo", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 1px;
   margin-left: 2vw;
   margin-right: 2vw;
   margin-top: 2vw;
   margin-bottom: 2vw;
   max-width: 60ch;
+  font-size: 1.1rem;
 }
 
 /* -------------------------------Button filtrering---------------------------------- */
@@ -39,7 +47,6 @@ button {
   cursor: pointer;
   font-family: "Bilo";
   margin-left: -15px;
-  
 }
 
 button::after {
@@ -75,22 +82,32 @@ button:hover::after {
     margin-left: -15px;
   }
 
-  #liste{
+  #liste {
     grid-template-columns: 1fr 1fr;
   }
-  article:nth-child(4n+1) {
-    justify-self:left;
+
+  article {
+    margin-bottom: 3rem;
+  }
+
+  article .citat {
+    text-align: left;
+    font-size: 1.2rem;
+  }
+  .navn {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  article:nth-child(4n + 1) {
+    justify-self: left;
   }
 
   article:nth-child(4n-1) {
     grid-column: 2;
-    justify-self:right;
-    }
+    justify-self: right;
+  }
 
-  
-    .drinks_img{
-      width: 25vw;
-    }
-
-   
+  .drinks_img img {
+    width: 24vw;
+  }
 }
