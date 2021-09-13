@@ -97,6 +97,7 @@ button:hover::after {
   .navn {
     font-size: 1.7rem;
     text-align: center;
+    font-family: "Bilo", sans-serif;
   }
   article:nth-child(4n + 1) {
     justify-self: left;
