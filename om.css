@@ -1,47 +1,76 @@
-#styletile hr {
-  border: 0;
-  border-top: 1px solid;
-  color: black;
+.wrapper_om {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
-#styletile .details {
-  font-size: 12px;
-  font-family: "nasalization", sans-serif;
-  color: #f7f9fa;
+.tekst_one {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 5rem;
+  place-content: center;
 }
 
-#styletile .color {
+.image_om {
+  height: 40%;
+  width: 40%;
+  padding-top: 5rem;
+}
+
+/* Citat under h2  */
+
+.citat {
+  font-family: "bilo", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  max-width: 60ch;
+}
+
+/*@media (min-width: 600px) {
+  .headings .palette {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+}
+*/
+
+#wrapper_om .color {
   height: 70px;
   width: 70px;
   border-radius: 40px;
 }
 
-#styletile .colors div {
+#wrapper_om .colors {
+  display: flex;
+  flex-flow: wrap;
+  gap: 20px;
+}
+
+#wrapper_om .colors div {
   height: 70px;
   width: 70px;
 }
 
-#styletile .color_1 {
-  background: #ffffff;
-}
-
-#styletile .color_2 {
+#wrapper_om .color_2 {
   background: #bad9e5;
 }
 
-#styletile .color_3 {
+#wrapper_om .color_3 {
   background: #111ef2;
 }
 
-#styletile .color_4 {
+#wrapper_om .color_4 {
   background: #000000;
 }
 
-#styletile .color_5 {
+#wrapper_om .color_5 {
   background: #f290a5;
 }
 
-#styletile .color_6 {
+#wrapper_om .color_6 {
   background: #f44000;
 }
 
@@ -77,65 +106,20 @@
   background: #00d1a7;
 }
 
-#styletile .colors {
-  display: flex;
-  flex-flow: wrap;
-  gap: 20px;
-}
-
-#styletile {
+.gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  max-width: 1000px;
-  margin: auto;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
 }
 
-#styletile .headings {
-  grid-row: 1/4;
-}
-
-.font_one {
-  font-family: "Bilo", sans-serif;
-  font-style: italic;
-}
-
-.font_two {
-  font-family: "Bilo", sans-serif;
-  font-style: bold;
-}
-
-.font_three {
-  font-family: "Bilo", sans-serif;
-  font-style: bold;
-}
-
-.font_four {
-  font-family: "Bilo", sans-serif;
-  font-style: light;
-}
-
-.wrapper_om {
-  display: grid;
-}
-
-/* Citat under h2  */
-
-.citat {
-  font-family: "bilo", sans-serif;
-  font-weight: 400;
-  letter-spacing: 1px;
-  margin-left: 2vw;
-  margin-right: 2vw;
-  margin-top: 2vw;
-  margin-bottom: 2vw;
-  max-width: 60ch;
-}
-
-/*@media (min-width: 600px) {
-  .headings .palette {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+@media (min-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr;
   }
 }
-*/
+
+@media (min-width: 1000px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
