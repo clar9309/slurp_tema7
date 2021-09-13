@@ -40,7 +40,7 @@ button::after {
 }
 
 button:hover::after {
-  width: 50%;
+  width: 100%;
 }
 
 #tekst {
@@ -60,5 +60,9 @@ button:hover::after {
 
   #tekst button {
     grid-column: 2/4;
+  }
+
+  button:hover::after {
+    width: 50%;
   }
 }
