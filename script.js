@@ -49,7 +49,7 @@ function start() {
 
 function filtrerDrinks() {
   //sætter filters værdi lig med værdien fra data af den knap der førte ind i funktionen
-  filter = this.dataset.alkoholtyper;
+  filter = this.dataset.kategori;
   console.log(filter);
 //fjerner og tilføjer valgt class til den rigtige knap
   document.querySelector(".valgt").classList.remove("valgt");
