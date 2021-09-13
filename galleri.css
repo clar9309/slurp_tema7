@@ -3,15 +3,8 @@ article {
   padding: 1rem;
   align-self: center;
   justify-self: center;
- 
-
 }
 
-  
-  
-  
-  
-  
 #liste {
   display: grid;
   grid-gap: 20px;
@@ -29,6 +22,7 @@ article {
   margin-top: 2vw;
   margin-bottom: 2vw;
   max-width: 60ch;
+  font-size: 1.5rem;
 }
 
 /* -------------------------------Button filtrering---------------------------------- */
@@ -82,5 +76,5 @@ button:hover::after {
 
   article:nth-child(4n-1) {
     grid-column: 2;
-    }
+  }
 }

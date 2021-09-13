@@ -13,10 +13,15 @@ h3 {
 /* citat under h2  */
 
 .citat {
-  font-family: "Bilo", sans-serif;
-  margin-top: 1;
-  font-size: 1rem;
-  margin-left: 2.5rem;
+  font-family: "bilo", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  max-width: 60ch;
+  font-size: 1.5rem;
 }
 
 /* --------------------Sectioner---------------------  */
@@ -50,128 +55,3 @@ article {
     grid-column: 2;
   }
 }
-/* .wrapper_om {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-}
-
-.tekst_one {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding-top: 5rem;
-  place-content: center;
-}
-
-.image_om {
-  height: 40%;
-  width: 40%;
-  padding-top: 5rem;
-} */
-
-/* Citat under h2  */
-
-/* .citat {
-  font-family: "bilo", sans-serif;
-  font-weight: 400;
-  letter-spacing: 1px;
-  margin-left: 2vw;
-  margin-right: 2vw;
-  margin-top: 2vw;
-  margin-bottom: 2vw;
-  max-width: 60ch;
-}
-
-/*@media (min-width: 600px) {
-  .headings .palette {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-  }
-}
-*/
-
-/* #wrapper_om .color {
-  height: 70px;
-  width: 70px;
-  border-radius: 40px;
-}
-
-#wrapper_om .colors {
-  display: flex;
-  flex-flow: wrap;
-  gap: 20px;
-}
-
-#wrapper_om .colors div {
-  height: 70px;
-  width: 70px;
-}
-
-#wrapper_om .color_2 {
-  background: #bad9e5;
-}
-
-#wrapper_om .color_3 {
-  background: #111ef2;
-}
-
-#wrapper_om .color_4 {
-  background: #000000;
-}
-
-#wrapper_om .color_5 {
-  background: #f290a5;
-}
-
-#wrapper_om .color_6 {
-  background: #f44000;
-}
-
-#styletile .color_7 {
-  background: #989eff;
-}
-
-#styletile .color_8 {
-  background: #989898;
-}
-
-#styletile .color_9 {
-  background: #f0835c;
-}
-
-#styletile .color_10 {
-  background: #f44000;
-}
-
-#styletile .color_11 {
-  background: #1f1f1f;
-}
-
-#styletile .color_12 {
-  background: #f5dc66;
-}
-
-#styletile .color_13 {
-  background: #7c7c7c;
-}
-
-#styletile .color_14 {
-  background: #00d1a7;
-}
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem;
-}
-
-@media (min-width: 600px) {
-  .gallery {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (min-width: 1000px) {
-  .gallery {
-    grid-template-columns: 1fr 1fr;
-  }
-} */
