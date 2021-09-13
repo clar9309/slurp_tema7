@@ -55,6 +55,7 @@ function filtrerDrinks() {
   document.querySelector(".valgt").classList.remove("valgt");
   this.classList.add("valgt");
 
+
   visIndhold();
 
   header.textContent = this.textContent;
@@ -78,7 +79,6 @@ function visIndhold() {
   // rydder indholdet af sektionen så der er plads til det nye indhold efter filtrering)
   destination.textContent = "";
 
- 
   drinks.forEach(drink => {
     if (filter == drink.alkoholtyper || filter == "alle") {
     const klon = template.cloneNode(true).content;
