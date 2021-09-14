@@ -1,3 +1,4 @@
+
 article {
   padding: 1rem 2rem;
   align-self: center;
@@ -9,6 +10,7 @@ article {
 }
 article div {
   display: flex;
+  text-align: center;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -39,6 +41,16 @@ article div {
   max-width: 60ch;
   font-size: 1.3rem;
 }
+
+/*-----------------single view---------*/
+
+.drinks .navn{
+  font-family: "bilo", sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 3rem;
+}
+
 
 /* -------------------------------Button filtrering---------------------------------- */
 
@@ -116,7 +128,7 @@ button:hover::after {
   }
   .navn {
     font-family: "bilo", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 1px;
     font-size: 1.5rem;
   }
