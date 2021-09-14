@@ -101,8 +101,6 @@
 
 
     function visDrink() {
-
-      skiftFarve();
       document.querySelector(".navn").textContent = drink.navn;
       document.querySelector(".billede").src = "drinks/" + drink.billednavn + ".svg";
       document.querySelector(".citat").textContent = drink.citat;
@@ -111,17 +109,7 @@
 
     }
 
-    function skiftFarve() {
-      if (drink.navn == "Negroni" || drink.navn == "Snake Martini") {
-        document.querySelector(".navn").classList.add("red");
-      } else if (drink.alkoholtyper == "Gin") {
-        document.querySelector(".navn").classList.add("lightblue");
-      } else if (drink.alkoholtyper == "Rom") {
-        document.querySelector(".navn").classList.add("pink");
-      } else {
-        document.querySelector(".navn").classList.add("blue");
-      }
-    }
+   
 
 
   </script>

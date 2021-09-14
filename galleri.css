@@ -33,10 +33,13 @@ article {
   font-family: "bilo", sans-serif;
   font-weight: 300;
   letter-spacing: 1px;
+  font-size: 1.3rem;
+  text-align: center;
+
 }
 .tekst {
   font-family: "bilo", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 1px;
   margin-left: 2vw;
   margin-right: 2vw;
@@ -46,8 +49,99 @@ article {
   font-size: 1.3rem;
 }
 
-/*-----------------single view---------*/
+.beskrivelse{
+  font-family: "bilo", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+  margin:2vw;
+}
 
+
+/* Snakker til h3 i galleri, hver anden pga grid. Snakker til articles child */
+
+/* Gin & Tonic */
+
+article:nth-child(2) h3 {
+  font-family: "bilo", sans-serif;
+  font-size: 3rem;
+  font-weight: bolder;
+  color: var(--lightblue);
+}
+
+/* Negroni */
+
+article:nth-child(4) h3 {
+  font-family: "bilo", sans-serif;
+  font-size: 3rem;
+  font-weight: bolder;
+  color: var(--red);
+}
+
+/* Summer Kiss */
+
+article:nth-child(6) h3 {
+  font-family: "bilo", sans-serif;
+  font-size: 3rem;
+  font-weight: bolder;
+  color: var(--orange);
+}
+
+/* Fresh me up */
+
+article:nth-child(8) h3 {
+  font-family: "bilo", sans-serif;
+  font-size: 3rem;
+  font-weight: bolder;
+  color: #f5dc66;
+}
+
+/* Snake Martini */
+
+article:nth-child(10) h3 {
+  font-family: "bilo", sans-serif;
+  font-size: 3rem;
+  font-weight: bolder;
+  color: #0f866e;
+}
+
+/* Whiskey Sour */
+
+article:nth-child(12) h3 {
+  font-family: "bilo", sans-serif;
+  font-size: 3rem;
+  font-weight: bolder;
+  color: #8b4bd5;
+}
+
+/*Espresso Martini */
+
+article:nth-child(14) h3 {
+  font-family: "bilo", sans-serif;
+  font-size: 3rem;
+  font-weight: bolder;
+  color: #3d2c22;
+}
+
+/*Mojito */
+
+article:nth-child(16) h3 {
+  font-family: "bilo", sans-serif;
+  font-size: 3rem;
+  font-weight: bolder;
+  color: #00d1a7;
+}
+
+/*Dark N stormy */
+
+article:nth-child(18) h3 {
+  font-family: "bilo", sans-serif;
+  font-size: 3rem;
+  font-weight: bolder;
+  color: grey;
+}
+
+/*-------------singleview--------*/
 .drinks .navn {
   font-weight: 600;
   letter-spacing: 1px;
@@ -62,23 +156,6 @@ article {
  margin:10vh auto;
  width: 60vw;
 }
-
-/*----color classes for drink names---*/
-.lightblue {
-  color: #bad9e5;
-}
-.blue {
-  color: #111ef2;
-}
-
-.red {
-  color: #f44000;
-}
-
-.pink {
-  color: #f290a5;
-}
-
 /* -------------------------------Button filtrering---------------------------------- */
 
 button {
@@ -149,7 +226,7 @@ h2 {
     width: 24vw;
   }
 
-  article .citat {
+  .citat {
     text-align: left;
     font-size: 1.2rem;
   }
@@ -163,7 +240,7 @@ h2 {
 
   /*------------single view web--------------*/
   .drinks{
-    margin-top:10vh;
+    margin-top:12vh;
   }
   .gridcontainer{
     display: grid;
@@ -188,7 +265,18 @@ h2 {
     text-transform: uppercase;
     text-align: center;
     left:30%;
-    top:10%;
+    top:12%;
+  }
+
+  .drinks .citat{
+    font-size: 1.5rem;
+    margin:2vw;
+    
+  }
+
+  .beskrivelse{ 
+    font-size: 1.3rem;
+    padding-bottom: 10vh;
   }
 
 }
