@@ -29,7 +29,7 @@ article div {
 
 .tekst {
   font-family: "bilo", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 1px;
   margin-left: 2vw;
   margin-right: 2vw;
@@ -39,6 +39,88 @@ article div {
   font-size: 1.3rem;
 }
 
+/* Snakker til h3 i galleri, hver anden pga grid. Snakker til articles child */
+
+/* Gin & Tonic */
+
+article:nth-child(2) h3 {
+  font-family: "bilo", sans-serif;
+  font-size: 3rem;
+  font-weight: bolder;
+  color: var(--lightblue);
+}
+
+/* Negroni */
+
+article:nth-child(4) h3 {
+  font-family: "bilo", sans-serif;
+  font-size: 3rem;
+  font-weight: bolder;
+  color: var(--red);
+}
+
+/* Summer Kiss */
+
+article:nth-child(6) h3 {
+  font-family: "bilo", sans-serif;
+  font-size: 3rem;
+  font-weight: bolder;
+  color: var(--orange);
+}
+
+/* Fresh me up */
+
+article:nth-child(8) h3 {
+  font-family: "bilo", sans-serif;
+  font-size: 3rem;
+  font-weight: bolder;
+  color: #f5dc66;
+}
+
+/* Snake Martini */
+
+article:nth-child(10) h3 {
+  font-family: "bilo", sans-serif;
+  font-size: 3rem;
+  font-weight: bolder;
+  color: #0f866e;
+}
+
+/* Whiskey Sour */
+
+article:nth-child(12) h3 {
+  font-family: "bilo", sans-serif;
+  font-size: 3rem;
+  font-weight: bolder;
+  color: #8b4bd5;
+}
+
+/*Espresso Martini */
+
+article:nth-child(14) h3 {
+  font-family: "bilo", sans-serif;
+  font-size: 3rem;
+  font-weight: bolder;
+  color: #3d2c22;
+}
+
+/*Mojito */
+
+article:nth-child(16) h3 {
+  font-family: "bilo", sans-serif;
+  font-size: 3rem;
+  font-weight: bolder;
+  color: #00d1a7;
+}
+
+/*Dark N stormy */
+
+article:nth-child(18) h3 {
+  font-family: "bilo", sans-serif;
+  font-size: 3rem;
+  font-weight: bolder;
+  color: grey;
+}
 /* -------------------------------Button filtrering---------------------------------- */
 
 button {
