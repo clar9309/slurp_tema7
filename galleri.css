@@ -35,7 +35,7 @@ article {
   letter-spacing: 1px;
   font-size: 1.3rem;
   text-align: center;
-
+  margin:2vw;
 }
 .tekst {
   font-family: "bilo", sans-serif;
@@ -49,14 +49,35 @@ article {
   font-size: 1.3rem;
 }
 
+/*-------------singleview--------*/
+.drinks{
+  padding:1vw;
+  margin:auto;
+}
 .beskrivelse{
   font-family: "bilo", sans-serif;
   font-weight: 400;
   letter-spacing: 1px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin:2vw;
+  padding-bottom: 5vw;
 }
 
+
+.drinks .navn {
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin:0;
+ 
+}
+
+.drinks .billede{
+ margin:10vh auto;
+ width: 60vw;
+}
 
 /* Snakker til h3 i galleri, hver anden pga grid. Snakker til articles child */
 
@@ -141,21 +162,7 @@ article:nth-child(18) h3 {
   color: grey;
 }
 
-/*-------------singleview--------*/
-.drinks .navn {
-  font-weight: 600;
-  letter-spacing: 1px;
-  font-size: 3rem;
-  text-transform: uppercase;
-  text-align: center;
-  margin:0;
- 
-}
 
-.drinks .billede{
- margin:10vh auto;
- width: 60vw;
-}
 /* -------------------------------Button filtrering---------------------------------- */
 
 button {
@@ -228,7 +235,7 @@ h2 {
 
   .citat {
     text-align: left;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
   .navn {
     text-align: center;
@@ -264,8 +271,8 @@ h2 {
     font-size: 4rem;
     text-transform: uppercase;
     text-align: center;
-    left:30%;
-    top:12%;
+    left:32%;
+    top:18%;
   }
 
   .drinks .citat{
