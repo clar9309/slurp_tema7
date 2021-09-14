@@ -21,10 +21,9 @@ article div {
   max-width: 1600px;
 }
 
-
-.navn{
+.navn {
   font-family: "bilo", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 1px;
   font-size: 1.5rem;
 }
@@ -38,7 +37,7 @@ article div {
   margin-top: 2vw;
   margin-bottom: 2vw;
   max-width: 60ch;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 /* -------------------------------Button filtrering---------------------------------- */
@@ -98,7 +97,6 @@ button:hover::after {
     margin-bottom: 3rem;
   }
 
- 
   article:nth-child(4n + 1) {
     justify-self: left;
   }
@@ -117,9 +115,9 @@ button:hover::after {
     font-size: 1.2rem;
   }
   .navn {
-  font-family: "bilo", sans-serif;
-  font-weight: 300;
-  letter-spacing: 1px;
-  font-size: 1.5rem;
+    font-family: "bilo", sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
   }
 }
