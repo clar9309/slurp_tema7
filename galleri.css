@@ -9,6 +9,7 @@ article {
 }
 article div {
   display: flex;
+  text-align: center;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -182,16 +183,6 @@ h2 {
     margin-bottom: 3rem;
   }
 
-  .navn {
-    font-size: 1.7rem;
-    text-align: center;
-    font-family: "Bilo", sans-serif;
-  }
-  /* =======>>>>>>>41f4adcd35e8aa7c2f4869b0b881add2d817489f
-    article:nth-child(4n + 1) {
-    justify-self: left;
-  } */
-
   article:nth-child(4n-1) {
     grid-column: 2;
     justify-self: right;
@@ -206,8 +197,10 @@ h2 {
     font-size: 1.2rem;
   }
   .navn {
-    font-size: 1.7rem;
     text-align: center;
     font-family: "bilo", sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
   }
 }
