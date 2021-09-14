@@ -21,6 +21,12 @@ article div {
   max-width: 1600px;
 }
 
+.navn {
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+}
+
 .citat {
   font-family: "bilo", sans-serif;
   font-weight: 300;
@@ -30,7 +36,7 @@ article div {
   margin-top: 2vw;
   margin-bottom: 2vw;
   max-width: 60ch;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 /* -------------------------------Button filtrering---------------------------------- */
@@ -90,18 +96,20 @@ button:hover::after {
     margin-bottom: 3rem;
   }
 
-  article .citat {
+  /* <<<<<<< HEAD article .citat {
     text-align: left;
     font-size: 1.2rem;
-  }
+  } */
+
   .navn {
     font-size: 1.7rem;
     text-align: center;
     font-family: "Bilo", sans-serif;
   }
-  article:nth-child(4n + 1) {
+  /* =======>>>>>>>41f4adcd35e8aa7c2f4869b0b881add2d817489f
+    article:nth-child(4n + 1) {
     justify-self: left;
-  }
+  } */
 
   article:nth-child(4n-1) {
     grid-column: 2;
@@ -110,5 +118,15 @@ button:hover::after {
 
   .drinks_img img {
     width: 24vw;
+  }
+
+  article .citat {
+    text-align: left;
+    font-size: 1.2rem;
+  }
+  .navn {
+    font-size: 1.7rem;
+    text-align: center;
+    font-family: "bilo", sans-serif;
   }
 }
