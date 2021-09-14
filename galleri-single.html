@@ -30,14 +30,16 @@
   <article class="drinks">
     <h3 class="navn"></h3>
     <div class="gridcontainer">
-    <img class="billede" src="" alt="billede" />
-    <div class="info">
-    <p class="ingredienser"></p>
-    <p class="beskrivelse"></p>
-    <p class="citat"></p>
-  </div>
-  </div>
+      <img class="billede" src="" alt="billede" />
+      <div class="info">
+        <p class="ingredienser"></p>
+        <p class="beskrivelse"></p>
+        <p class="citat"></p>
+      </div>
+    </div>
   </article>
+
+
 
   <section id="footer">
     <div class="telefon">
@@ -105,11 +107,32 @@
       document.querySelector(".billede").src = "drinks/" + drink.billednavn + ".svg";
       document.querySelector(".citat").textContent = drink.citat;
       document.querySelector(".beskrivelse").textContent = drink[`lang beskrivelse`];
-    
+
+
+
+//tjekker for navnet på drinket og giver den tilsvarende id, som skifter farven.
+      if (drink.navn == "Negroni") {
+        document.querySelector("h3").id = "negroni";
+      } else if (drink.navn == "Summer kiss") {
+        document.querySelector("h3").id = "summerKiss";
+      }else if (drink.navn == "Fresh me up") {
+        document.querySelector("h3").id = "freshMeUp";
+      }else if (drink.navn == "Snake Martini") {
+        document.querySelector("h3").id = "snakeMartini";
+      }else if (drink.navn == "Whisky Sour") {
+        document.querySelector("h3").id = "whiskySour";
+      }else if (drink.navn == "Espresso Martini") {
+        document.querySelector("h3").id = "espressoMartini";
+      }else if (drink.navn == "Mojito") {
+        document.querySelector("h3").id = "mojito";
+      }else if (drink.navn == "Dark N' Stormy") {
+        document.querySelector("h3").id = "darkNStormy";
+      }
 
     }
 
-   
+
+
 
 
   </script>
