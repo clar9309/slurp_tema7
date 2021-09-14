@@ -1,4 +1,3 @@
-
 article {
   padding: 1rem 2rem;
   align-self: center;
@@ -8,7 +7,7 @@ article {
   margin-top: 2rem;
   cursor: pointer;
 }
-article div {
+.drinks_info div {
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -24,11 +23,17 @@ article div {
 }
 
 .navn {
+  font-family: "bilo", sans-serif;
   font-weight: 300;
   letter-spacing: 1px;
   font-size: 1.5rem;
 }
 
+.citat {
+  font-family: "bilo", sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
 .tekst {
   font-family: "bilo", sans-serif;
   font-weight: 300;
@@ -43,13 +48,36 @@ article div {
 
 /*-----------------single view---------*/
 
-.drinks .navn{
-  font-family: "bilo", sans-serif;
+.drinks .navn {
   font-weight: 600;
   letter-spacing: 1px;
   font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin:0;
+ 
 }
 
+.drinks .billede{
+ margin:10vh auto;
+ width: 60vw;
+}
+
+/*----color classes for drink names---*/
+.lightblue {
+  color: #bad9e5;
+}
+.blue {
+  color: #111ef2;
+}
+
+.red {
+  color: #f44000;
+}
+
+.pink {
+  color: #f290a5;
+}
 
 /* -------------------------------Button filtrering---------------------------------- */
 
@@ -112,11 +140,6 @@ h2 {
     margin-bottom: 3rem;
   }
 
-  /* 
-    article:nth-child(4n + 1) {
-    justify-self: left;
-  } */
-
   article:nth-child(4n-1) {
     grid-column: 2;
     justify-self: right;
@@ -133,8 +156,39 @@ h2 {
   .navn {
     text-align: center;
     font-family: "bilo", sans-serif;
-    font-weight: 400;
+    font-weight: 450;
     letter-spacing: 1px;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
+
+  /*------------single view web--------------*/
+  .drinks{
+    margin-top:10vh;
+  }
+  .gridcontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+ .gridcontainer .info{
+  align-self: center;
+  align-content: center;
+ }
+  
+  .drinks .billede{
+    margin:0 auto;
+   width: 24vw;
+  }
+
+  .drinks .navn {
+    position: absolute;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-align: center;
+    left:30%;
+    top:10%;
+  }
+
 }

@@ -29,11 +29,14 @@
 
   <article class="drinks">
     <h3 class="navn"></h3>
+    <div class="gridcontainer">
     <img class="billede" src="" alt="billede" />
+    <div class="info">
     <p class="ingredienser"></p>
     <p class="beskrivelse"></p>
     <p class="citat"></p>
-
+  </div>
+  </div>
   </article>
 
   <section id="footer">
@@ -56,7 +59,7 @@
     <div class="sociale_medier">
       <div class="facebook">
         <a href="https://www.facebook.com/clara.lundpetersen.5"></a>
-          <img src="footer/facebook.png" alt="facebook" />
+        <img src="footer/facebook.png" alt="facebook" />
         </a>
       </div>
 
@@ -67,8 +70,7 @@
       </div>
       <div class="linkedin">
         <a href="https://www.linkedin.com/feed/">
-          <img src="footer/linkedin.png" alt="linkedin"
-        /></a>
+          <img src="footer/linkedin.png" alt="linkedin" /></a>
       </div>
       <div class="instagram">
         <a href="https://www.instagram.com/claralundp/">
@@ -82,29 +84,43 @@
   <script>
     //script kun for single view
     let drink;
-//finder ID'et for drinken og gemmer i variabel id
+    //finder ID'et for drinken og gemmer i variabel id
     const urlParams = new URLSearchParams(window.location.search);
     const id = urlParams.get("id");
 
 
     console.log("ID", id);
 
-// indhenter data fra restdb med id'et
+    // indhenter data fra restdb med id'et
     async function hentData() {
-      const JSONData = await fetch(`https://drinkkort-5373.restdb.io/rest/drinks/${id}`, options );
+      const JSONData = await fetch(`https://drinkkort-5373.restdb.io/rest/drinks/${id}`, options);
       drink = await JSONData.json();
       console.log("Drinken", drink);
       visDrink(drink);
     }
 
-    
+
     function visDrink() {
+
+      skiftFarve();
       document.querySelector(".navn").textContent = drink.navn;
       document.querySelector(".billede").src = "drinks/" + drink.billednavn + ".svg";
       document.querySelector(".citat").textContent = drink.citat;
       document.querySelector(".beskrivelse").textContent = drink[`lang beskrivelse`];
-      document.querySelector(".ingredienser").textContent = drink.ingredienser;
+    
 
+    }
+
+    function skiftFarve() {
+      if (drink.navn == "Negroni" || drink.navn == "Snake Martini") {
+        document.querySelector(".navn").classList.add("red");
+      } else if (drink.alkoholtyper == "Gin") {
+        document.querySelector(".navn").classList.add("lightblue");
+      } else if (drink.alkoholtyper == "Rom") {
+        document.querySelector(".navn").classList.add("pink");
+      } else {
+        document.querySelector(".navn").classList.add("blue");
+      }
     }
 
 
