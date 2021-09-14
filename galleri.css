@@ -28,7 +28,7 @@ article div {
   font-size: 1.5rem;
 }
 
-.citat {
+.tekst {
   font-family: "bilo", sans-serif;
   font-weight: 300;
   letter-spacing: 1px;
@@ -72,6 +72,10 @@ button:hover::after {
 
 .valgt {
   text-decoration: underline 4px solid black;
+}
+
+h2 {
+  color: var(--red);
 }
 
 @media (min-width: 600px) {
