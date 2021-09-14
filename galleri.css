@@ -36,7 +36,7 @@ article div {
   margin-top: 2vw;
   margin-bottom: 2vw;
   max-width: 60ch;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 /* -------------------------------Button filtrering---------------------------------- */
@@ -95,11 +95,6 @@ button:hover::after {
   article {
     margin-bottom: 3rem;
   }
-
-  /* <<<<<<< HEAD article .citat {
-    text-align: left;
-    font-size: 1.2rem;
-  } */
 
   .navn {
     font-size: 1.7rem;
