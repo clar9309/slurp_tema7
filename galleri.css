@@ -19,7 +19,7 @@ article {
   display: grid;
   grid-auto-flow: dense;
   margin: auto;
-  max-width: 1600px;
+  max-width: 1500px;
 }
 
 .navn {
@@ -77,6 +77,27 @@ article {
   width: 60vw;
 }
 
+/*-----tilbage knap----------*/
+.tilbage{
+  font-family: "bilo", sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding:10px;
+}
+
+.tilbage:hover{
+color:grey;
+}
+
+/*--- se mere knap---*/
+.seMere{
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
 /* Snakker til h3 i galleri, hver anden pga grid. Snakker til articles child */
 
 /* Gin & Tonic */
@@ -88,6 +109,14 @@ article:nth-child(2) h3 {
   color: var(--lightblue);
 }
 
+article:nth-child(2) .seMere {
+  color: var(--lightblue);
+  
+}
+article:nth-child(2) .seMere::after {
+  background: var(--lightblue);
+  
+}
 .ginTonic {
   color: var(--lightblue);
 }
@@ -99,6 +128,13 @@ article:nth-child(4) h3 {
   font-size: 3rem;
   font-weight: bolder;
   color: var(--red);
+}
+
+article:nth-child(4) .seMere {
+  color: var(--red);
+}
+article:nth-child(4) .seMere::after {
+  background: var(--red);
 }
 
 #negroni {
@@ -113,7 +149,13 @@ article:nth-child(6) h3 {
   font-weight: bolder;
   color: var(--orange);
 }
+article:nth-child(6) .seMere {
+  color: var(--orange);
+}
 
+article:nth-child(6) .seMere::after {
+  background: var(--orange);
+}
 #summerKiss {
   color: var(--orange);
 }
@@ -126,6 +168,12 @@ article:nth-child(8) h3 {
   font-weight: bolder;
   color: #f5dc66;
 }
+article:nth-child(8) .seMere{
+  color: #f5dc66;
+}
+article:nth-child(8) .seMere::after {
+  background: #f5dc66;
+}
 #freshMeUp {
   color: #f5dc66;
 }
@@ -136,6 +184,12 @@ article:nth-child(10) h3 {
   font-size: 3rem;
   font-weight: bolder;
   color: #0f866e;
+}
+article:nth-child(10) .seMere{
+  color: #0f866e;
+}
+article:nth-child(10) .seMere::after{
+  background: #0f866e;
 }
 #snakeMartini {
   color: #0f866e;
@@ -148,6 +202,13 @@ article:nth-child(12) h3 {
   font-size: 3rem;
   font-weight: bolder;
   color: #8b4bd5;
+}
+
+article:nth-child(12) .seMere{
+  color: #8b4bd5;
+}
+article:nth-child(12) .seMere::after{
+  background: #8b4bd5;
 }
 
 #whiskySour {
@@ -163,6 +224,13 @@ article:nth-child(14) h3 {
   color: #3d2c22;
 }
 
+article:nth-child(14) .seMere{
+  color: #3d2c22;
+}
+article:nth-child(14) .seMere::after{
+  background: #3d2c22;
+}
+
 #espressoMartini {
   color: #3d2c22;
   margin-bottom: 3vw;
@@ -175,6 +243,12 @@ article:nth-child(16) h3 {
   font-size: 3rem;
   font-weight: bolder;
   color: #00d1a7;
+}
+article:nth-child(16) .seMere{
+  color: #00d1a7;
+}
+article:nth-child(16) .seMere::after{
+  background: #00d1a7;
 }
 
 #mojito {
@@ -189,7 +263,13 @@ article:nth-child(18) h3 {
   font-weight: bolder;
   color: grey;
 }
+article:nth-child(18) .seMere{
+  color: grey;
+}
 
+article:nth-child(18) .seMere::after{
+  background: grey;
+}
 #darkNStormy {
   color: grey;
 }
