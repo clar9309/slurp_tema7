@@ -35,7 +35,7 @@ article {
   letter-spacing: 1px;
   font-size: 1.3rem;
   text-align: center;
-  margin:2vw;
+  margin: 2vw;
 }
 .tekst {
   font-family: "bilo", sans-serif;
@@ -50,19 +50,18 @@ article {
 }
 
 /*-------------singleview--------*/
-.drinks{
-  padding:1vw;
-  margin:auto;
+.drinks {
+  padding: 1vw;
+  margin: auto;
 }
-.beskrivelse{
+.beskrivelse {
   font-family: "bilo", sans-serif;
   font-weight: 400;
   letter-spacing: 1px;
   font-size: 1.2rem;
-  margin:2vw;
+  margin: 2vw;
   padding-bottom: 5vw;
 }
-
 
 .drinks .navn {
   font-weight: 600;
@@ -70,14 +69,12 @@ article {
   font-size: 3rem;
   text-transform: uppercase;
   text-align: center;
-  margin:0;
-
- 
+  margin: 0;
 }
 
-.drinks .billede{
- margin:10vh auto;
- width: 60vw;
+.drinks .billede {
+  margin: 10vh auto;
+  width: 60vw;
 }
 
 /*-----tilbage knap----------*/
@@ -104,7 +101,7 @@ article:nth-child(2) h3 {
   color: var(--lightblue);
 }
 
-.ginTonic{
+.ginTonic {
   color: var(--lightblue);
 }
 
@@ -117,7 +114,7 @@ article:nth-child(4) h3 {
   color: var(--red);
 }
 
-#negroni{
+#negroni {
   color: var(--red);
 }
 
@@ -130,7 +127,7 @@ article:nth-child(6) h3 {
   color: var(--orange);
 }
 
-#summerKiss{
+#summerKiss {
   color: var(--orange);
 }
 
@@ -142,7 +139,7 @@ article:nth-child(8) h3 {
   font-weight: bolder;
   color: #f5dc66;
 }
-#freshMeUp{
+#freshMeUp {
   color: #f5dc66;
 }
 /* Snake Martini */
@@ -153,7 +150,7 @@ article:nth-child(10) h3 {
   font-weight: bolder;
   color: #0f866e;
 }
-#snakeMartini{
+#snakeMartini {
   color: #0f866e;
 }
 
@@ -166,7 +163,7 @@ article:nth-child(12) h3 {
   color: #8b4bd5;
 }
 
-#whiskySour{
+#whiskySour {
   color: #8b4bd5;
 }
 
@@ -179,10 +176,9 @@ article:nth-child(14) h3 {
   color: #3d2c22;
 }
 
-#espressoMartini{
+#espressoMartini {
   color: #3d2c22;
   margin-bottom: 3vw;
-
 }
 
 /*Mojito */
@@ -194,9 +190,8 @@ article:nth-child(16) h3 {
   color: #00d1a7;
 }
 
-#mojito{
+#mojito {
   color: #00d1a7;
-
 }
 
 /*Dark N stormy */
@@ -208,9 +203,8 @@ article:nth-child(18) h3 {
   color: grey;
 }
 
-#darkNStormy{
+#darkNStormy {
   color: grey;
-
 }
 
 /* -------------------------------Button filtrering---------------------------------- */
@@ -248,7 +242,7 @@ button:hover::after {
 }
 
 h2 {
-  color: var(--red);
+  color: #111e71;
 }
 
 @media (min-width: 600px) {
@@ -296,23 +290,22 @@ h2 {
   }
 
   /*------------single view web--------------*/
-  .drinks{
-    margin-top:5vh;
+  .drinks {
+    margin-top: 5vh;
   }
-  .gridcontainer{
+  .gridcontainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
- .gridcontainer .info{
-  align-self: center;
-  align-content: center;
- }
-  
-  .drinks .billede{
-   
-    margin:-2vw auto;
-   width: 24vw;
+  .gridcontainer .info {
+    align-self: center;
+    align-content: center;
+  }
+
+  .drinks .billede {
+    margin: -2vw auto;
+    width: 24vw;
   }
 
   .drinks .navn {
@@ -324,15 +317,13 @@ h2 {
     margin-left: -3vw;
   }
 
-  .drinks .citat{
+  .drinks .citat {
     font-size: 1.5rem;
-    margin:2vw;
-    
+    margin: 2vw;
   }
 
-  .beskrivelse{ 
+  .beskrivelse {
     font-size: 1.3rem;
     padding-bottom: 10vh;
   }
-
 }
