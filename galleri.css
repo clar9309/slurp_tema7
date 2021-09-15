@@ -8,8 +8,14 @@ article {
   align-content: center;
 }
 .drinks_img {
+ 
   margin-top: 2rem;
   cursor: pointer;
+}
+
+.drinks_img img{
+  margin:0 auto;
+  width: 55vw;
 }
 .drinks_info div {
   display: flex;
