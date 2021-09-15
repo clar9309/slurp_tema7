@@ -1,18 +1,11 @@
-
 article {
   padding: 1rem 2rem;
   align-self: center;
   align-content: center;
 }
 .drinks_img {
- 
   margin-top: 2rem;
   cursor: pointer;
-}
-
-.drinks_img img{
-  margin:0 auto;
-  width: 55vw;
 }
 .drinks_info div {
   display: flex;
@@ -109,17 +102,17 @@ article {
 
 /* Gin & Tonic */
 
-article:nth-child(2) h3 {
+article:nth-child(10) h3 {
   font-family: "bilo", sans-serif;
   font-size: 3rem;
   font-weight: bolder;
   color: var(--lightblue);
 }
 
-article:nth-child(2) .seMere {
+article:nth-child(10) .seMere {
   color: var(--lightblue);
 }
-article:nth-child(2) .seMere::after {
+article:nth-child(10) .seMere::after {
   background: var(--lightblue);
 }
 .ginTonic {
@@ -128,17 +121,17 @@ article:nth-child(2) .seMere::after {
 
 /* Negroni */
 
-article:nth-child(4) h3 {
+article:nth-child(12) h3 {
   font-family: "bilo", sans-serif;
   font-size: 3rem;
   font-weight: bolder;
   color: var(--red);
 }
 
-article:nth-child(4) .seMere {
+article:nth-child(12) .seMere {
   color: var(--red);
 }
-article:nth-child(4) .seMere::after {
+article:nth-child(12) .seMere::after {
   background: var(--red);
 }
 
@@ -148,17 +141,17 @@ article:nth-child(4) .seMere::after {
 
 /* Summer Kiss */
 
-article:nth-child(6) h3 {
+article:nth-child(14) h3 {
   font-family: "bilo", sans-serif;
   font-size: 3rem;
   font-weight: bolder;
   color: var(--orange);
 }
-article:nth-child(6) .seMere {
+article:nth-child(14) .seMere {
   color: var(--orange);
 }
 
-article:nth-child(6) .seMere::after {
+article:nth-child(14) .seMere::after {
   background: var(--orange);
 }
 #summerKiss {
@@ -167,16 +160,16 @@ article:nth-child(6) .seMere::after {
 
 /* Fresh me up */
 
-article:nth-child(8) h3 {
+article:nth-child(2) h3 {
   font-family: "bilo", sans-serif;
   font-size: 3rem;
   font-weight: bolder;
   color: #f5dc66;
 }
-article:nth-child(8) .seMere {
+article:nth-child(2) .seMere {
   color: #f5dc66;
 }
-article:nth-child(8) .seMere::after {
+article:nth-child(2) .seMere::after {
   background: #f5dc66;
 }
 #freshMeUp {
@@ -184,16 +177,16 @@ article:nth-child(8) .seMere::after {
 }
 /* Snake Martini */
 
-article:nth-child(10) h3 {
+article:nth-child(4) h3 {
   font-family: "bilo", sans-serif;
   font-size: 3rem;
   font-weight: bolder;
   color: #0f866e;
 }
-article:nth-child(10) .seMere {
+article:nth-child(4) .seMere {
   color: #0f866e;
 }
-article:nth-child(10) .seMere::after {
+article:nth-child(4) .seMere::after {
   background: #0f866e;
 }
 #snakeMartini {
@@ -202,17 +195,17 @@ article:nth-child(10) .seMere::after {
 
 /* Whiskey Sour */
 
-article:nth-child(12) h3 {
+article:nth-child(6) h3 {
   font-family: "bilo", sans-serif;
   font-size: 3rem;
   font-weight: bolder;
   color: #8b4bd5;
 }
 
-article:nth-child(12) .seMere {
+article:nth-child(6) .seMere {
   color: #8b4bd5;
 }
-article:nth-child(12) .seMere::after {
+article:nth-child(6) .seMere::after {
   background: #8b4bd5;
 }
 
@@ -222,17 +215,17 @@ article:nth-child(12) .seMere::after {
 
 /*Espresso Martini */
 
-article:nth-child(14) h3 {
+article:nth-child(16) h3 {
   font-family: "bilo", sans-serif;
   font-size: 3rem;
   font-weight: bolder;
   color: #3d2c22;
 }
 
-article:nth-child(14) .seMere {
+article:nth-child(16) .seMere {
   color: #3d2c22;
 }
-article:nth-child(14) .seMere::after {
+article:nth-child(16) .seMere::after {
   background: #3d2c22;
 }
 
@@ -243,16 +236,16 @@ article:nth-child(14) .seMere::after {
 
 /*Mojito */
 
-article:nth-child(16) h3 {
+article:nth-child(8) h3 {
   font-family: "bilo", sans-serif;
   font-size: 3rem;
   font-weight: bolder;
   color: #00d1a7;
 }
-article:nth-child(16) .seMere {
+article:nth-child(8) .seMere {
   color: #00d1a7;
 }
-article:nth-child(16) .seMere::after {
+article:nth-child(8) .seMere::after {
   background: #00d1a7;
 }
 
