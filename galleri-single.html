@@ -29,6 +29,7 @@
   </header>
 
   <article class="drinks">
+    <p class="tilbage">Tilbage til Galleriet</p>
     <h3 class="navn"></h3>
     <div class="gridcontainer">
       <img class="billede" src="" alt="billede" />
@@ -109,6 +110,8 @@
       document.querySelector(".citat").textContent = drink.citat;
       document.querySelector(".beskrivelse").textContent = drink[`lang beskrivelse`];
 
+  document.querySelector(".tilbage").addEventListener("click", tilbage);
+
 
 
 //tjekker for navnet på drinket og giver den tilsvarende id, som skifter farven.
@@ -132,7 +135,9 @@
 
     }
 
-
+function tilbage(){
+  history.back();
+}
 
   </script>
 
