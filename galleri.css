@@ -80,16 +80,14 @@ article {
 /*-----tilbage knap----------*/
 .tilbage{
   font-family: "bilo", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 1px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   cursor: pointer;
   padding:10px;
 }
 
-.tilbage:hover{
-color:grey;
-}
+
 
 /*--- se mere knap---*/
 .seMere{
