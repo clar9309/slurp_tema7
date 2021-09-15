@@ -1,3 +1,7 @@
+body {
+  margin: 3vw;
+}
+
 article {
   padding: 1rem 2rem;
   align-self: center;
@@ -78,21 +82,21 @@ article {
 }
 
 /*-----tilbage knap----------*/
-.tilbage{
+.tilbage {
   font-family: "bilo", sans-serif;
   font-weight: 300;
   letter-spacing: 1px;
   font-size: 1.1rem;
   cursor: pointer;
-  padding:10px;
+  padding: 10px;
 }
 
-.tilbage:hover{
-color:grey;
+.tilbage:hover {
+  color: grey;
 }
 
 /*--- se mere knap---*/
-.seMere{
+.seMere {
   font-weight: 400;
   letter-spacing: 1px;
   font-size: 1.2rem;
@@ -111,11 +115,9 @@ article:nth-child(2) h3 {
 
 article:nth-child(2) .seMere {
   color: var(--lightblue);
-  
 }
 article:nth-child(2) .seMere::after {
   background: var(--lightblue);
-  
 }
 .ginTonic {
   color: var(--lightblue);
@@ -168,7 +170,7 @@ article:nth-child(8) h3 {
   font-weight: bolder;
   color: #f5dc66;
 }
-article:nth-child(8) .seMere{
+article:nth-child(8) .seMere {
   color: #f5dc66;
 }
 article:nth-child(8) .seMere::after {
@@ -185,10 +187,10 @@ article:nth-child(10) h3 {
   font-weight: bolder;
   color: #0f866e;
 }
-article:nth-child(10) .seMere{
+article:nth-child(10) .seMere {
   color: #0f866e;
 }
-article:nth-child(10) .seMere::after{
+article:nth-child(10) .seMere::after {
   background: #0f866e;
 }
 #snakeMartini {
@@ -204,10 +206,10 @@ article:nth-child(12) h3 {
   color: #8b4bd5;
 }
 
-article:nth-child(12) .seMere{
+article:nth-child(12) .seMere {
   color: #8b4bd5;
 }
-article:nth-child(12) .seMere::after{
+article:nth-child(12) .seMere::after {
   background: #8b4bd5;
 }
 
@@ -224,10 +226,10 @@ article:nth-child(14) h3 {
   color: #3d2c22;
 }
 
-article:nth-child(14) .seMere{
+article:nth-child(14) .seMere {
   color: #3d2c22;
 }
-article:nth-child(14) .seMere::after{
+article:nth-child(14) .seMere::after {
   background: #3d2c22;
 }
 
@@ -244,10 +246,10 @@ article:nth-child(16) h3 {
   font-weight: bolder;
   color: #00d1a7;
 }
-article:nth-child(16) .seMere{
+article:nth-child(16) .seMere {
   color: #00d1a7;
 }
-article:nth-child(16) .seMere::after{
+article:nth-child(16) .seMere::after {
   background: #00d1a7;
 }
 
@@ -263,11 +265,11 @@ article:nth-child(18) h3 {
   font-weight: bolder;
   color: grey;
 }
-article:nth-child(18) .seMere{
+article:nth-child(18) .seMere {
   color: grey;
 }
 
-article:nth-child(18) .seMere::after{
+article:nth-child(18) .seMere::after {
   background: grey;
 }
 #darkNStormy {
@@ -308,8 +310,18 @@ button:hover::after {
   text-decoration: underline 4px solid black;
 }
 
+/* Overskrifter i galleri */
+
 h2 {
   color: #111e71;
+}
+
+/* Filtrerings overskrift */
+
+h5 {
+  font-family: "bilo", sans-serif;
+  font-size: clamp(1.5rem, 8vw - 2rem, 3rem);
+  margin-bottom: 0;
 }
 
 @media (min-width: 600px) {

@@ -25,9 +25,9 @@ function toggleMenu() {
 }
 
 let drinks;
-let filter ="alle";
+let filter = "alle";
 
-const header = document.querySelector("h2");
+const header = document.querySelector("h5");
 const url = "https://drinkkort-5373.restdb.io/rest/drinks";
 const options = {
   headers: {
@@ -36,12 +36,11 @@ const options = {
 };
 
 function start() {
-  
   const filterKnapper = document.querySelectorAll("ul button");
   filterKnapper.forEach((knap) =>
     knap.addEventListener("click", filtrerDrinks)
   );
-  
+
   hentData(drinks);
 }
 
@@ -51,10 +50,9 @@ function filtrerDrinks() {
   //sætter filters værdi lig med værdien fra data af den knap der førte ind i funktionen
   filter = this.dataset.kategori;
   console.log(filter);
-//fjerner og tilføjer valgt class til den rigtige knap
+  //fjerner og tilføjer valgt class til den rigtige knap
   document.querySelector(".valgt").classList.remove("valgt");
   this.classList.add("valgt");
-
 
   visIndhold();
 
@@ -69,8 +67,6 @@ async function hentData() {
   visIndhold(drinks);
 }
 
-
-
 function visIndhold() {
   // variabler for indholdets destination og templaten
   const destination = document.querySelector("#liste");
@@ -79,27 +75,26 @@ function visIndhold() {
   // rydder indholdet af sektionen så der er plads til det nye indhold efter filtrering)
   destination.textContent = "";
 
-  drinks.forEach(drink => {
+  drinks.forEach((drink) => {
     if (filter == drink.alkoholtyper || filter == "alle") {
-    const klon = template.cloneNode(true).content;
+      const klon = template.cloneNode(true).content;
 
-    
-    klon.querySelector("img").src = "drinks/" + drink.billednavn + ".svg";
-    klon.querySelector(".navn").textContent = drink.navn;
-    klon.querySelector(".citat").textContent = drink.citat;
+      klon.querySelector("img").src = "drinks/" + drink.billednavn + ".svg";
+      klon.querySelector(".navn").textContent = drink.navn;
+      klon.querySelector(".citat").textContent = drink.citat;
 
-    klon.querySelector("article").addEventListener("click",() => visDetaljer(drink));
-    klon.querySelector(".seMere").addEventListener("click",() => visDetaljer(drink));
+      klon
+        .querySelector("article")
+        .addEventListener("click", () => visDetaljer(drink));
+      klon
+        .querySelector(".seMere")
+        .addEventListener("click", () => visDetaljer(drink));
 
-    destination.appendChild(klon);
-    
-}});
+      destination.appendChild(klon);
+    }
+  });
 }
 //-----fører hen til single view---//
-function visDetaljer (drink) {
+function visDetaljer(drink) {
   location.href = `galleri-single.html?id=${drink._id}`;
 }
-
-
-
-
