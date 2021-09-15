@@ -71,6 +71,7 @@ article {
   text-transform: uppercase;
   text-align: center;
   margin:0;
+
  
 }
 
@@ -90,12 +91,20 @@ article:nth-child(2) h3 {
   color: var(--lightblue);
 }
 
+.ginTonic{
+  color: var(--lightblue);
+}
+
 /* Negroni */
 
 article:nth-child(4) h3 {
   font-family: "bilo", sans-serif;
   font-size: 3rem;
   font-weight: bolder;
+  color: var(--red);
+}
+
+#negroni{
   color: var(--red);
 }
 
@@ -108,6 +117,10 @@ article:nth-child(6) h3 {
   color: var(--orange);
 }
 
+#summerKiss{
+  color: var(--orange);
+}
+
 /* Fresh me up */
 
 article:nth-child(8) h3 {
@@ -116,13 +129,18 @@ article:nth-child(8) h3 {
   font-weight: bolder;
   color: #f5dc66;
 }
-
+#freshMeUp{
+  color: #f5dc66;
+}
 /* Snake Martini */
 
 article:nth-child(10) h3 {
   font-family: "bilo", sans-serif;
   font-size: 3rem;
   font-weight: bolder;
+  color: #0f866e;
+}
+#snakeMartini{
   color: #0f866e;
 }
 
@@ -135,6 +153,10 @@ article:nth-child(12) h3 {
   color: #8b4bd5;
 }
 
+#whiskySour{
+  color: #8b4bd5;
+}
+
 /*Espresso Martini */
 
 article:nth-child(14) h3 {
@@ -142,6 +164,12 @@ article:nth-child(14) h3 {
   font-size: 3rem;
   font-weight: bolder;
   color: #3d2c22;
+}
+
+#espressoMartini{
+  color: #3d2c22;
+  margin-bottom: 3vw;
+
 }
 
 /*Mojito */
@@ -153,6 +181,11 @@ article:nth-child(16) h3 {
   color: #00d1a7;
 }
 
+#mojito{
+  color: #00d1a7;
+
+}
+
 /*Dark N stormy */
 
 article:nth-child(18) h3 {
@@ -162,6 +195,10 @@ article:nth-child(18) h3 {
   color: grey;
 }
 
+#darkNStormy{
+  color: grey;
+
+}
 
 /* -------------------------------Button filtrering---------------------------------- */
 
@@ -247,7 +284,7 @@ h2 {
 
   /*------------single view web--------------*/
   .drinks{
-    margin-top:12vh;
+    margin-top:5vh;
   }
   .gridcontainer{
     display: grid;
@@ -260,19 +297,18 @@ h2 {
  }
   
   .drinks .billede{
-    margin:0 auto;
+   
+    margin:-2vw auto;
    width: 24vw;
   }
 
   .drinks .navn {
-    position: absolute;
     font-weight: 600;
     letter-spacing: 1px;
     font-size: 4rem;
     text-transform: uppercase;
     text-align: center;
-    left:32%;
-    top:18%;
+    margin-left: -3vw;
   }
 
   .drinks .citat{
