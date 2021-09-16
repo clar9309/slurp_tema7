@@ -43,6 +43,12 @@ article {
 }
 
 @media screen and (min-width: 600px) {
+  header{
+    position: static;
+  }
+  nav{
+    position: static;
+  }
   main {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-flow: dense;
@@ -64,6 +70,12 @@ article {
 /* Virker i Ipad  */
 
 @media screen and (min-width: 760px) {
+  header{
+    position: static;
+  }
+  nav{
+    position: static;
+  }
   main {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-flow: dense;
