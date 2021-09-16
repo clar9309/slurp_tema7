@@ -33,15 +33,18 @@ header {
   display: flex;
   font-family: "Bilo", sans-serif;
   justify-content: space-between;
-  overflow: hidden;
-  margin-bottom: 0;
-  margin-top: 0;
+  margin-bottom: 13vh;
+  margin-top: 1vh;
+  position: relative;
+  z-index: 1;
 }
 
 nav {
+  position: absolute;
+  height: 100%;
   display: grid;
   text-align: end;
-  margin-bottom: 0;
+  right:1vw;
 }
 
 img a {
@@ -157,7 +160,15 @@ a {
 /* Hvis skærmen er større end 600px  */
 
 @media (min-width: 600px) {
+  header{
+    position: static;
+  }
+
+  nav{
+    position: static;
+  }
   body {
+    margin-top:auto;
     margin-left: 5rem;
     margin-right: 5rem;
   }
@@ -263,3 +274,4 @@ a {
     width: 100%;
   }
 }
+
